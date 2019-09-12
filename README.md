@@ -13,6 +13,10 @@ The application detects a human skeleton and pixel changes in a video input or c
 The pose detection uses a two-branch multistage CNN using OpenPose architecture to detect 18 keypoints: ears, eyes, nose, neck, shoulders, elbows, wrists, hips, knees and ankles. The first branch predicts confidence maps S n and The second branch predicts Part Affinity Fields L n. The two map predictions are parsed with the input image features and will product the keypoints. For more information please refer to [human-pose-estimation-001](https://docs.openvinotoolkit.org/latest/_intel_models_human_pose_estimation_0001_description_human_pose_estimation_0001.html) in the OpenVINO Pre-Trained Open Model Zoo. [And the network architecture information] (https://www.learnopencv.com/deep-learning-based-human-pose-estimation-using-opencv-cpp-python/) 
 The pose detector and heatmap generator are merged together 
 
-# Requirements
-## Hardware
-6th to 8th Generation Intel Core processor with Iris Pro graphic or Intel HD Graphics 
+## Note
+If the trained model you use is in RGB order please manually rearrange or use the Model Optimizer tool with --reverse_input_channels argument to convert to BGR order which is the expected input for Inference Engine samples and demos. Refer to When to Specify Input Shapes section of [Converting a Model Using General Conversion Parameters](https://docs.openvinotoolkit.org/2019_R1/_docs_MO_DG_prepare_model_convert_model_Converting_Model_General.html)
+
+# Required
+Install and setup the [Intel Distribution of OpenVINO toolkit 2019 R2 Release] (https://software.intel.com/en-us/openvino-toolkit/choose-download)
+
+# Running
