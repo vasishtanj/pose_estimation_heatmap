@@ -65,3 +65,6 @@ Finally, run the application using the command
         -no_show                   Optional. Do not show processed video.
         -r                         Optional. Output inference results as raw values.
 
+# Demo Output
+
+The demo uses OpenCV to display the resulting frame with estimated poses while generating a motion heatmap. 
