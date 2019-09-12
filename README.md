@@ -37,9 +37,9 @@ Then build the samples by going back to the samples directory and run
     cd /opt/intel/openvino/inference_engine/samples
     ./build_samples.sh
 
+***NOTE*** Because OpenCV libraries are being used to implement the heatmap, you must manually link the ***video*** library for CMake to read and use. Go to the CMakefiles.txt and write "video" after gui. 
 
-
-
+Finall, run the application using the command 
 ./human_pose_estimation_demo  -h will bring up a menu 
 
     ./human_pose_estimation_demo -h
