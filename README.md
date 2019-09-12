@@ -24,11 +24,13 @@ Because this application is built upon the human pose estimation sample provided
 This application is set up to run the [human-pose-estimation-001](https://docs.openvinotoolkit.org/latest/_intel_models_human_pose_estimation_0001_description_human_pose_estimation_0001.html) from the OpenVINO Pre-Trained Open Model Zoo, however you can use public or pre-trained models. To download use the [OpenVINO Model Downloader](https://software.intel.com/en-us/articles/model-downloader-essentials). 
 Also it is required to use the [OpenVINO Model Optimizer](https://docs.openvinotoolkit.org/2019_R1/_docs_MO_DG_Deep_Learning_Model_Optimizer_DevGuide.html) to convert files to Inference Engine format (.xml and .bin) 
 ./human_pose_estimation_demo  -h will bring up a menu 
+
     ./human_pose_estimation_demo -h
+ 
     InferenceEngine:
     API version ............ <version>
     Build .................. <number>
-
+   
     human_pose_estimation_demo [OPTION]
     Options:
 
