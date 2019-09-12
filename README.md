@@ -26,8 +26,8 @@ Also it is required to use the [OpenVINO Model Optimizer](https://docs.openvinot
 ./human_pose_estimation_demo  -h will bring up a menu 
     ./human_pose_estimation_demo -h
     InferenceEngine:
-        API version ............ <version>
-        Build .................. <number>
+    API version ............ <version>
+    Build .................. <number>
 
     human_pose_estimation_demo [OPTION]
     Options:
