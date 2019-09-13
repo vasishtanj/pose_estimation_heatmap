@@ -20,7 +20,7 @@ The pose detector and heatmap generator are merged together by estimating and re
 If the trained model you use is in RGB order please manually rearrange or use the Model Optimizer tool with --reverse_input_channels argument to convert to BGR order which is the expected input for Inference Engine samples and demos. Refer to When to Specify Input Shapes section of [Converting a Model Using General Conversion Parameters](https://docs.openvinotoolkit.org/2019_R1/_docs_MO_DG_prepare_model_convert_model_Converting_Model_General.html)
 
 # Required
-Because this application is built upon the Human Pose Estimation C++ Demo provided in the toolkit, you will need to install and setup the [Intel Distribution of OpenVINO toolkit 2019 R2 Release](https://software.intel.com/en-us/openvino-toolkit/choose-download)
+Because this application is built upon the Human Pose Estimation C++ Demo provided in the toolkit, you will need to install and setup the [Intel Distribution of OpenVINO toolkit 2019 R1 Release](https://software.intel.com/en-us/openvino-toolkit/choose-download)
 
 # Setup
 This application is set up to run the [human-pose-estimation-001](https://docs.openvinotoolkit.org/latest/_intel_models_human_pose_estimation_0001_description_human_pose_estimation_0001.html) from the OpenVINO Pre-Trained Open Model Zoo, however you can use public or pre-trained models. To download use the [OpenVINO Model Downloader](https://software.intel.com/en-us/articles/model-downloader-essentials). 
