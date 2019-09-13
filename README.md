@@ -48,7 +48,7 @@ Finally, go to your build/intel64/Release folder and from there you will run the
 
     ./human_pose_estimation_demo -i [path to your video file] -m /opt/intel/openvino/deployment_tools/tools/model_downloader/Transportation/human_pose_estimation/mobilenet-v1/dldt/human-pose-estimation-0001.xml -d CPU 
 
-
+You can use any video you would like. A video called test_vid.avi is provided for demo purposes. 
 ./human_pose_estimation_demo  -h will bring up a menu 
 
     ./human_pose_estimation_demo -h
