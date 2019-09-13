@@ -29,7 +29,7 @@ Go to the where the human_pose_estimation_demo directory is. The path below is w
 
     cd /opt/intel/openvino/inference_engine/samples/human_pose_estimation_demo/ 
 
-main.cpp must be modified in order to implement the heatmap. Keep a copy of the current main.cpp to keep as a back up and then use the main.cpp from this repository when you build and run the application. You can also add the portion of code labeled heatmap implementation starts here 
+
 
 Then update enviornment variables required to compile and run OpenVINO toolkit using the following script.
     
