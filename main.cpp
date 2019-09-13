@@ -17,7 +17,6 @@
 #include <iostream>
 #include <ctime>
 #include "opencv2/video/background_segm.hpp"
-//#include "/home/intel/opencv/modules/video/include/opencv2/video/background_segm.hpp"
 
 
 #include <vector>
@@ -57,8 +56,6 @@ bool ParseAndCheckCommandLine(int argc, char* argv[]) {
 
     return true;
 }
-//*********************************************************************************************************
-
 
 int main(int argc, char* argv[]) {
 	 			
@@ -89,7 +86,7 @@ int main(int argc, char* argv[]) {
         } 
 
 	
-//**********************************************************************************************************************************************
+//heatmap integration starts here
 	
 	
 	int maxValue = 2; 
@@ -162,8 +159,8 @@ int main(int argc, char* argv[]) {
 	
 
 	}
-//************************************************************************************************************************************************************************
-
+//heatmap integration ends here
+	    
         do {
             double t1 = static_cast<double>(cv::getTickCount());
             std::vector<HumanPose> poses = estimator.estimate(image);
