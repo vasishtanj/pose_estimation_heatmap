@@ -1,0 +1,15 @@
+Determining if the include file unistd.h exists failed with the following output:
+
+
+Determining if the include file stdint.h exists failed with the following output:
+
+
+Determining if the include file sys/types.h exists failed with the following output:
+
+
+Determining if the include file fnmatch.h exists failed with the following output:
+
+
+Determining if the include file stddef.h exists failed with the following output:
+
+
