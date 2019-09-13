@@ -24,32 +24,27 @@ Because this application is built upon the Human Pose Estimation C++ Demo provid
 
 # Setup
 This application is set up to run the [human-pose-estimation-001](https://docs.openvinotoolkit.org/latest/_intel_models_human_pose_estimation_0001_description_human_pose_estimation_0001.html) from the OpenVINO Pre-Trained Open Model Zoo, however you can use public or pre-trained models. To download use the [OpenVINO Model Downloader](https://software.intel.com/en-us/articles/model-downloader-essentials). 
+For R1 the human-pose-estimation-001 model should be in this directory 
+
+    cd /opt/intel/openvino/deployment_tools/tools/model_downloader/Transportation/human_pose_estimation/mobilenet-v1/dldt/human-pose-estimation-0001.xml
+    
 Also it is required to use the [OpenVINO Model Optimizer](https://docs.openvinotoolkit.org/2019_R1/_docs_MO_DG_Deep_Learning_Model_Optimizer_DevGuide.html) to convert files to Inference Engine format (.xml and .bin) 
-Go to the where the human_pose_estimation_demo directory is. The path below is where the directory is in R1. 
-
-    cd /opt/intel/openvino/inference_engine/samples/human_pose_estimation_demo/ 
-
-
 
 Then update enviornment variables required to compile and run OpenVINO toolkit using the following script.
     
     source /opt/intel/openvino/bin/setupvars.sh
 
-# Running
-Then build the samples by going back to the samples directory and run 
-
-    cd /opt/intel/openvino/inference_engine/samples
-    ./build_samples.sh
-
-***NOTE:*** Because OpenCV libraries are used to implement the heatmap, the ***video*** library was manually linked for CMake to read and use. The library was linked on line 8 of the CMakefiles.txt. 
+## Linker note
+Because OpenCV libraries are used to implement the heatmap, the ***video*** library was manually linked for CMake to read and use. The library was linked on line 8 of the CMakefiles.txt. 
 
     find_package(OpenCV COMPONENTS highui video QUIET)
+    
+# Build and Run
+To first build, run the build_samples.sh script 
+    
+    ./build_samples.sh
 
-Finally, go to the directory from where you will run the application
-
-    cd inference_engine_samples_build/intel64/Release
-
-and run using the following command
+Finally, go to your build/intel64/Release folder and from there you will run the application using this command 
 
     ./human_pose_estimation_demo -i [path to your video file] -m /opt/intel/openvino/deployment_tools/tools/model_downloader/Transportation/human_pose_estimation/mobilenet-v1/dldt/human-pose-estimation-0001.xml -d CPU 
 
