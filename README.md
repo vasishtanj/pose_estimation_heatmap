@@ -40,11 +40,11 @@ Because OpenCV libraries are used to implement the heatmap, the ***video*** libr
     find_package(OpenCV COMPONENTS highui video QUIET)
     
 # Build and Run
-To first build, run the build_samples.sh script 
+Build using script and then run the executable.
     
     ./build_samples.sh
-
-Finally, go to your build/intel64/Release folder and from there you will run the application using this command 
+    
+Run application from your build/intel64/Release folder and from there you will run the application using this command 
 
     ./human_pose_estimation_demo -i [path to your video file] -m /opt/intel/openvino/deployment_tools/tools/model_downloader/Transportation/human_pose_estimation/mobilenet-v1/dldt/human-pose-estimation-0001.xml -d CPU 
 
