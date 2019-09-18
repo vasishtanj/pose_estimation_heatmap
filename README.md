@@ -35,7 +35,7 @@ Then update enviornment variables required to compile and run OpenVINO toolkit u
     source /opt/intel/openvino/bin/setupvars.sh
 
 ## Linker note
-Because OpenCV libraries are used to implement the heatmap, the ***video*** library was manually linked for CMake to read and use. The library was linked on line 8 of the CMakefiles.txt. 
+Because OpenCV libraries are used to implement the heatmap, the ***video*** library was manually linked for CMake to read and use. The library was linked on line 8 of the CMakefiles.txt in the pose_estimation_heatmap/human_pose_estimation_demo folder
 
     find_package(OpenCV COMPONENTS highui video QUIET)
     
