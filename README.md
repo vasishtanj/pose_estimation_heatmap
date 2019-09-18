@@ -40,8 +40,11 @@ Because OpenCV libraries are used to implement the heatmap, the ***video*** libr
     find_package(OpenCV COMPONENTS highui video QUIET)
     
 # Build and Run
-Build using script and then run the executable.
-    
+Make the build script an executable by 
+
+    sudo chmod +x build_samples.sh
+And then run the executable script
+
     ./build_samples.sh
     
 Run application from your build/intel64/Release folder and from there you will run the application using this command 
@@ -72,5 +75,3 @@ You can use any video you would like. A video called test_vid.avi is provided fo
 
 The demo should be running and saved as result_overlay_final.jpg in your Release folder.
 The demo uses OpenCV to display the resulting frame with estimated poses while generating a motion heatmap. 
-***Follow Up***
-The application may glitch and the assumption is that it needs to run on a more powerful device such as an IEI tank and/or needs to be optimized for the two features to run parallel. 
